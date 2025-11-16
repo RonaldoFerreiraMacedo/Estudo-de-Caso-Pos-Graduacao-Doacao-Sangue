@@ -55,8 +55,8 @@ Treinamento com dados balanceados
 
 Avaliação com matriz de confusão e métricas clássicas
 
-## 📈 Resultados
-# ➡️ Métricas do Modelo
+# 📈 Resultados
+## ➡️ Métricas do Modelo
 
 Acurácia: 80,5%
 
@@ -66,7 +66,7 @@ Recall (classe positiva): 77,8%
 
 Esses resultados indicam que o modelo possui bom equilíbrio entre identificar corretamente os doadores que retornarão e evitar falsos positivos.
 
-# ➡️ Interpretação
+## ➡️ Interpretação
 
 O modelo funciona bem para campanhas de previsão simples.
 
