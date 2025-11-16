@@ -1,15 +1,15 @@
-🩸 README reescrito — Blood Donation Prediction Project
-🩸 Blood Donation Prediction — Machine Learning for Donor Engagement
+## 🩸 README reescrito — Blood Donation Prediction Project
+## 🩸 Blood Donation Prediction — Machine Learning for Donor Engagement
 
 Um sistema preditivo para identificar doadores com maior probabilidade de comparecer em campanhas de doação de sangue.
 
-📌 Visão Geral
+# 📌 Visão Geral
 
 Este projeto utiliza Machine Learning para prever se um doador retornará em futuras campanhas, permitindo que hemocentros planejem ações de forma mais eficiente, reduzam desperdícios e evitem estoques críticos.
 
 A solução foi construída como parte de um estudo de caso de Aprendizado de Máquina, utilizando Support Vector Machine (SVM) para classificação binária.
 
-🎯 Objetivo do Projeto
+# 🎯 Objetivo do Projeto
 
 Auxiliar hemocentros a antecipar a demanda e disponibilidade de doadores.
 
@@ -17,7 +17,7 @@ Identificar padrões de comportamento baseados no histórico de doações.
 
 Criar um modelo simples, interpretável e facilmente aplicável em sistemas reais.
 
-📊 Dataset
+# 📊 Dataset
 
 O dataset doacao.csv contém 748 registros, com as seguintes variáveis:
 
@@ -30,7 +30,7 @@ Doou	Variável alvo (1 = doou, 0 = não doou)
 
 O dataset apresenta desbalanceamento moderado, o que exigiu técnicas de ajuste.
 
-🛠️ Metodologia
+# 🛠️ Metodologia
 1. Pré-processamento
 
 Carregamento e inspeção do dataset
@@ -55,8 +55,8 @@ Treinamento com dados balanceados
 
 Avaliação com matriz de confusão e métricas clássicas
 
-📈 Resultados
-➡️ Métricas do Modelo
+## 📈 Resultados
+# ➡️ Métricas do Modelo
 
 Acurácia: 80,5%
 
@@ -66,7 +66,7 @@ Recall (classe positiva): 77,8%
 
 Esses resultados indicam que o modelo possui bom equilíbrio entre identificar corretamente os doadores que retornarão e evitar falsos positivos.
 
-➡️ Interpretação
+# ➡️ Interpretação
 
 O modelo funciona bem para campanhas de previsão simples.
 
