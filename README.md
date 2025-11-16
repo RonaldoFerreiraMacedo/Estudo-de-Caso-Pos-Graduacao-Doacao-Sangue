@@ -1,4 +1,3 @@
-## 🩸 README reescrito — Blood Donation Prediction Project
 ## 🩸 Blood Donation Prediction — Machine Learning for Donor Engagement
 
 Um sistema preditivo para identificar doadores com maior probabilidade de comparecer em campanhas de doação de sangue.
