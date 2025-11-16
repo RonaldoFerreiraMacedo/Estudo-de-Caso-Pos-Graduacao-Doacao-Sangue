@@ -1,48 +1,75 @@
-## 🩸 Blood Donation Prediction Project
-# 📋 Descrição do Projeto
-Este projeto implementa um sistema de predição usando Machine Learning para identificar doadores de sangue que compareceram a uma campanha de doação. Desenvolvido como estudo de caso para a disciplina de Aprendizado de Máquina, o sistema utiliza uma Máquina de Vetores de Suporte (SVM) para classificar doadores com base em seu histórico de doações.
+🩸 README reescrito — Blood Donation Prediction Project
+🩸 Blood Donation Prediction — Machine Learning for Donor Engagement
 
-# 🎯 Objetivo
-Monitorar estoques de sangue e prever a disponibilidade de doadores, permitindo que hemocentros planejem campanhas de forma mais eficiente e evitem faltas críticas de suprimentos.
+Um sistema preditivo para identificar doadores com maior probabilidade de comparecer em campanhas de doação de sangue.
 
-# 📊 Base de Dados
-O projeto utiliza o arquivo doacao.csv contendo 748 registros com as seguintes variáveis:
+📌 Visão Geral
 
-Recência: Meses desde a última doação
+Este projeto utiliza Machine Learning para prever se um doador retornará em futuras campanhas, permitindo que hemocentros planejem ações de forma mais eficiente, reduzam desperdícios e evitem estoques críticos.
 
-Frequência: Número total de doações
+A solução foi construída como parte de um estudo de caso de Aprendizado de Máquina, utilizando Support Vector Machine (SVM) para classificação binária.
 
-Quantidade: Volume total doado (em cm³)
+🎯 Objetivo do Projeto
 
-Tempo: Meses desde a primeira doação
+Auxiliar hemocentros a antecipar a demanda e disponibilidade de doadores.
 
-Doou: Variável alvo (1 = doou, 0 = não doou)
+Identificar padrões de comportamento baseados no histórico de doações.
 
-# ⚙️ Metodologia
+Criar um modelo simples, interpretável e facilmente aplicável em sistemas reais.
+
+📊 Dataset
+
+O dataset doacao.csv contém 748 registros, com as seguintes variáveis:
+
+Variável	Descrição
+Recência	Meses desde a última doação
+Frequência	Número total de doações
+Quantidade	Volume total doado (cm³)
+Tempo	Meses desde a primeira doação
+Doou	Variável alvo (1 = doou, 0 = não doou)
+
+O dataset apresenta desbalanceamento moderado, o que exigiu técnicas de ajuste.
+
+🛠️ Metodologia
 1. Pré-processamento
-Carregamento e limpeza dos dados
 
-Balanceamento do dataset (undersampling para corrigir desbalanceamento de classes)
+Carregamento e inspeção do dataset
 
-Divisão em conjuntos de treino e teste (90%/10%)
+Remoção de inconsistências
+
+Balanceamento com undersampling para compensar a classe minoritária
+
+Divisão treino/teste em 90% / 10%
 
 2. Engenharia de Features
-Padronização dos dados (média zero e desvio padrão unitário)
 
-Preparação para o algoritmo SVM
+Padronização dos dados usando StandardScaler
+
+Preparação do conjunto para modelos baseados em distância (como SVM)
 
 3. Modelagem
-Implementação de Support Vector Classifier (SVC)
+
+Implementação do algoritmo SVC (Support Vector Classifier)
 
 Treinamento com dados balanceados
 
-Validação com matriz de confusão
+Avaliação com matriz de confusão e métricas clássicas
 
-# 📈 Resultados
-O modelo alcançou os seguintes resultados na matriz de confusão:
+📈 Resultados
+➡️ Métricas do Modelo
 
-Acurácia: 80.5%
+Acurácia: 80,5%
 
-Precisão: 82.4% (para classe positiva)
+Precisão (classe positiva): 82,4%
 
-Recall: 77.8% (para classe positiva)
+Recall (classe positiva): 77,8%
+
+Esses resultados indicam que o modelo possui bom equilíbrio entre identificar corretamente os doadores que retornarão e evitar falsos positivos.
+
+➡️ Interpretação
+
+O modelo funciona bem para campanhas de previsão simples.
+
+A sensibilidade (recall) é especialmente importante em hemocentros — o modelo atingiu um bom valor inicial.
+
+Há potencial de melhoria com modelos como Random Forest ou Gradient Boosting.
